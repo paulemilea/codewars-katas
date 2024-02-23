@@ -51,3 +51,12 @@ const arrayPlusArray = function (arr1, arr2) {
 
 // Grasshopper - Combine strings
 const combineNames = (firstName, lastName) => `${firstName} ${lastName}`;
+
+// Sum without highest and lowest number
+const sumArray = function (arr) {
+  if (!Array.isArray(arr) || arr.length <= 2) return 0;
+
+  const sortedArray = [...arr.sort((a, b) => a - b)];
+
+  return sortedArray.slice(1, -1).reduce((acc, curr) => acc + curr, 0);
+};
