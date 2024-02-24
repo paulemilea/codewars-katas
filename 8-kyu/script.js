@@ -79,3 +79,8 @@ const strCount = function (str, targetLetter) {
   const regexPattern = new RegExp(targetLetter, 'g');
   return str.match(regexPattern) ? str.match(regexPattern).length : 0;
 };
+
+// Invert values
+const invert = function (arr) {
+  return [...arr.map(el => (el > 0 ? el * -1 : Math.abs(el) * 1))];
+};
