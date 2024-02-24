@@ -73,3 +73,9 @@ const multiply = function (number) {
   const numberOfDigits = String(Math.abs(number)).length;
   return number * 5 ** numberOfDigits;
 };
+
+// All Star Code Challenge #18
+const strCount = function (str, targetLetter) {
+  const regexPattern = new RegExp(targetLetter, 'g');
+  return str.match(regexPattern) ? str.match(regexPattern).length : 0;
+};
