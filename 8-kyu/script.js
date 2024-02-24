@@ -60,3 +60,9 @@ const sumArray = function (arr) {
 
   return sortedArray.slice(1, -1).reduce((acc, curr) => acc + curr, 0);
 };
+
+// Flick Switch
+const flickSwitch = function (arr) {
+  let value = true;
+  return arr.map(el => (el === 'flick' ? (value = !value) : value));
+};
