@@ -4,9 +4,9 @@ const evenOrOdd = function (number) {
 };
 
 // Multiply
-const multiply = function (a, b) {
-  return a * b;
-};
+// const multiply = function (a, b) {
+//   return a * b;
+// };
 
 // Reversed Strings
 const solution = function (str) {
@@ -65,4 +65,11 @@ const sumArray = function (arr) {
 const flickSwitch = function (arr) {
   let value = true;
   return arr.map(el => (el === 'flick' ? (value = !value) : value));
+};
+
+// Multiply the number
+const multiply = function (number) {
+  // const numberOfDigits = String(number).replace('-', '').length;
+  const numberOfDigits = String(Math.abs(number)).length;
+  return number * 5 ** numberOfDigits;
 };
