@@ -89,3 +89,11 @@ const invert = function (arr) {
 const sum = function (numbers) {
   return numbers.reduce((acc, curr) => acc + curr, 0);
 };
+
+// Is this my tail?
+const correctTail = function (body, tail) {
+  const sub = body[body.length - 1];
+
+  if (sub === tail) return true;
+  return false;
+};
