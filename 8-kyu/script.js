@@ -84,3 +84,8 @@ const strCount = function (str, targetLetter) {
 const invert = function (arr) {
   return [...arr.map(el => (el > 0 ? el * -1 : Math.abs(el) * 1))];
 };
+
+// Sum Arrays
+const sum = function (numbers) {
+  return numbers.reduce((acc, curr) => acc + curr, 0);
+};
