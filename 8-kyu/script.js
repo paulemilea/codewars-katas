@@ -68,11 +68,11 @@ const flickSwitch = function (arr) {
 };
 
 // Multiply the number
-const multiply = function (number) {
-  // const numberOfDigits = String(number).replace('-', '').length;
-  const numberOfDigits = String(Math.abs(number)).length;
-  return number * 5 ** numberOfDigits;
-};
+// const multiply = function (number) {
+//   // const numberOfDigits = String(number).replace('-', '').length;
+//   const numberOfDigits = String(Math.abs(number)).length;
+//   return number * 5 ** numberOfDigits;
+// };
 
 // All Star Code Challenge #18
 const strCount = function (str, targetLetter) {
@@ -97,3 +97,16 @@ const correctTail = function (body, tail) {
   if (sub === tail) return true;
   return false;
 };
+
+// Fundamentals: Return
+const add = (a, b) => a + b;
+
+const multiply = (a, b) => a * b;
+
+const divide = (a, b) => a / b;
+
+const mod = (a, b) => a % b;
+
+const exponent = (a, b) => a ** b;
+
+const subt = (a, b) => a - b;
