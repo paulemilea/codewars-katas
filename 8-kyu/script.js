@@ -110,3 +110,6 @@ const mod = (a, b) => a % b;
 const exponent = (a, b) => a ** b;
 
 const subt = (a, b) => a - b;
+
+// Beginner - Lost Without a Map
+const maps = x => x.map(value => value * 2);
