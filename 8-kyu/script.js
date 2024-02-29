@@ -113,3 +113,18 @@ const subt = (a, b) => a - b;
 
 // Beginner - Lost Without a Map
 const maps = x => x.map(value => value * 2);
+
+// Vowel remover
+const shortcut = function (string) {
+  return string
+    .split('')
+    .filter(
+      letter =>
+        letter !== 'a' &&
+        letter !== 'e' &&
+        letter !== 'i' &&
+        letter !== 'o' &&
+        letter !== 'u'
+    )
+    .join('');
+};
