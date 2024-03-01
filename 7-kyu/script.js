@@ -21,3 +21,14 @@ const isAllPossibilities = function (arr) {
   }
   return !isValid.includes(false);
 };
+
+// Guess the Word: Count Matching Letters
+const countCorrectCharacters = function (correctWord, guess) {
+  if (correctWord.length !== guess.length)
+    throw new Error('Function parameters must have the same length ⛔');
+  let count = 0;
+  for (let i = 0; i < correctWord.length; i++) {
+    if (correctWord[i] === guess[i]) count++;
+  }
+  return count;
+};
