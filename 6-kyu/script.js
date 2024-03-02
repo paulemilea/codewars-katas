@@ -15,3 +15,6 @@ const uniqueInOrder = function (iterable) {
 const isPangram = function (string) {
   return new Set(string.toLowerCase().replace(/[^A-Za-z]/g, '')).size === 26;
 };
+
+// Duplicate Arguments
+const solution = (...args) => args.length !== new Set(args).size;
