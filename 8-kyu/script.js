@@ -128,3 +128,12 @@ const shortcut = function (string) {
     )
     .join('');
 };
+
+// Count the Monkeys!
+const monkeyCount = function (n) {
+  const arr = [];
+  for (let i = 1; i <= n; i++) {
+    arr.push(i);
+  }
+  return arr;
+};
