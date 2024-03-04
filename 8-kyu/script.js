@@ -137,3 +137,8 @@ const monkeyCount = function (n) {
   }
   return arr;
 };
+
+// String repeat
+const repeatStr = function (n, s) {
+  return s.repeat(n);
+};
