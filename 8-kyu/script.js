@@ -142,3 +142,8 @@ const monkeyCount = function (n) {
 const repeatStr = function (n, s) {
   return s.repeat(n);
 };
+
+// Grasshopper - If/else syntax debug
+const checkAlive = function (health) {
+  return health > 0 ? true : false;
+};
