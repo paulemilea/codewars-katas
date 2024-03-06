@@ -32,3 +32,16 @@ const countCorrectCharacters = function (correctWord, guess) {
   }
   return count;
 };
+
+// Array - squareUp b!
+const squareUp = function (n) {
+  const arr = [];
+  for (let i = 1; i <= n; i++) {
+    for (let j = n; j > 0; j--) {
+      console.log({ i, j });
+      if (i < j) arr.push(0);
+      else arr.push(j);
+    }
+  }
+  return arr;
+};
