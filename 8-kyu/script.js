@@ -147,3 +147,16 @@ const repeatStr = function (n, s) {
 const checkAlive = function (health) {
   return health > 0 ? true : false;
 };
+
+// Total amount of points
+const points = function (games) {
+  return games
+    .map(game => {
+      const hometeamScore = game[0];
+      const visitorteamScore = game[2];
+      if (hometeamScore > visitorteamScore) return 3;
+      if (visitorteamScore > hometeamScore) return 0;
+      if (hometeamScore === visitorteamScore) return 1;
+    })
+    .reduce((acc, score) => acc + score);
+};
