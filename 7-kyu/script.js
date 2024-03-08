@@ -45,3 +45,8 @@ const squareUp = function (n) {
   }
   return arr;
 };
+
+// Shortest Word
+const findShort = function (s) {
+  return Math.min(...s.split(' ').map(word => +word.length));
+};
