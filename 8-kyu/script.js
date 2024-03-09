@@ -160,3 +160,6 @@ const points = function (games) {
     })
     .reduce((acc, score) => acc + score);
 };
+
+// Beginner - Reduce but Grow
+const grow = x => x.reduce((acc, value) => acc * value);
