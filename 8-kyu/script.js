@@ -163,3 +163,8 @@ const points = function (games) {
 
 // Beginner - Reduce but Grow
 const grow = x => x.reduce((acc, value) => acc * value);
+
+// Counting sheep...
+const countSheeps = function (sheep) {
+  return sheep.reduce((acc, el) => (el === true ? (acc += 1) : acc), 0);
+};
