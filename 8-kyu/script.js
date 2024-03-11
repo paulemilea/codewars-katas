@@ -168,3 +168,8 @@ const grow = x => x.reduce((acc, value) => acc * value);
 const countSheeps = function (sheep) {
   return sheep.reduce((acc, el) => (el === true ? (acc += 1) : acc), 0);
 };
+
+// Is the string uppercase?
+String.prototype.isUpperCase = function () {
+  return this.valueOf() === this.toUpperCase();
+};
