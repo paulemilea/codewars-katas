@@ -173,3 +173,10 @@ const countSheeps = function (sheep) {
 String.prototype.isUpperCase = function () {
   return this.valueOf() === this.toUpperCase();
 };
+
+// Find Multiples of a Number
+const findMultiples = function (integer, limit) {
+  const list = [];
+  for (let i = integer; i <= limit; i += integer) list.push(i);
+  return list;
+};
