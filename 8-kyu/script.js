@@ -180,3 +180,8 @@ const findMultiples = function (integer, limit) {
   for (let i = integer; i <= limit; i += integer) list.push(i);
   return list;
 };
+
+// The Feast of Many Beasts
+const feast = function (beast, dish) {
+  return beast[0] + beast.slice(-1) === dish[0] + dish.slice(-1);
+};
