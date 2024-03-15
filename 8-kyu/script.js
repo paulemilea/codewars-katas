@@ -197,3 +197,12 @@ const well = function (x) {
   else if (count === 0) return 'Fail!';
   else return 'Publish!';
 };
+
+// Grasshopper - Summation
+const summation = function (num) {
+  let result = 0;
+  for (let i = 1; i <= num; i++) {
+    result += i;
+  }
+  return result;
+};
