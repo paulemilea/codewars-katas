@@ -185,3 +185,15 @@ const findMultiples = function (integer, limit) {
 const feast = function (beast, dish) {
   return beast[0] + beast.slice(-1) === dish[0] + dish.slice(-1);
 };
+
+// Well of Ideas - Easy Version
+const well = function (x) {
+  let count = 0;
+  for (let i = 0; i < x.length; i++) {
+    if (x[i] === 'good') count++;
+  }
+
+  if (count > 2) return 'I smell a series!';
+  else if (count === 0) return 'Fail!';
+  else return 'Publish!';
+};
