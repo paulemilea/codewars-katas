@@ -206,3 +206,8 @@ const summation = function (num) {
   }
   return result;
 };
+
+// Find numbers which are divisible by given number
+const divisibleBy = function (numbers, divisor) {
+  return numbers.filter(number => number % divisor === 0);
+};
