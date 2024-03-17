@@ -211,3 +211,11 @@ const summation = function (num) {
 const divisibleBy = function (numbers, divisor) {
   return numbers.filter(number => number % divisor === 0);
 };
+
+// Remove exclamation marks
+const removeExclamationMarks = function (s) {
+  return s
+    .split('')
+    .filter(letter => letter !== '!')
+    .join('');
+};
