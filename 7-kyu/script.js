@@ -50,3 +50,14 @@ const squareUp = function (n) {
 const findShort = function (s) {
   return Math.min(...s.split(' ').map(word => +word.length));
 };
+
+// Running out of space
+const spacey = function (arr) {
+  const result = [];
+  let str = '';
+  for (let i = 0; i < arr.length; i++) {
+    str += arr[i];
+    result.push(str);
+  }
+  return result;
+};
