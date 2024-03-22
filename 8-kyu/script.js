@@ -219,3 +219,16 @@ const removeExclamationMarks = function (s) {
     .filter(letter => letter !== '!')
     .join('');
 };
+
+// Count by X
+const countBy = function (x, n) {
+  const result = [];
+  let num = 0;
+
+  for (let i = 0; i < n; i++) {
+    num += x;
+    result.push(num);
+  }
+
+  return result;
+};
