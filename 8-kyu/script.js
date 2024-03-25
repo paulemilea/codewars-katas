@@ -232,3 +232,8 @@ const countBy = function (x, n) {
 
   return result;
 };
+
+// Return Negative
+const makeNegative = function (num) {
+  return num < 0 ? num : -num;
+};
