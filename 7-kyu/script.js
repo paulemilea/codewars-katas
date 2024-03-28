@@ -61,3 +61,9 @@ const spacey = function (arr) {
   }
   return result;
 };
+
+// Is it a letter?
+const isItLetter = function (character) {
+  const chars = 'abcdefghijklmnopqrstuvwxyz';
+  return chars.includes(character) || chars.toUpperCase().includes(character);
+};
