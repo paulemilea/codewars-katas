@@ -237,3 +237,8 @@ const countBy = function (x, n) {
 const makeNegative = function (num) {
   return num < 0 ? num : -num;
 };
+
+// Sum of positive
+const positiveSum = function (arr) {
+  return arr.reduce((acc, el) => (el > 0 ? acc + el : acc), 0);
+};
