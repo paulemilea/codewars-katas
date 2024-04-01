@@ -242,3 +242,13 @@ const makeNegative = function (num) {
 const positiveSum = function (arr) {
   return arr.reduce((acc, el) => (el > 0 ? acc + el : acc), 0);
 };
+
+// Count of positives / sum of negatives
+const countPositivesSumNegatives = function (input) {
+  if (input === null || !input.length) return [];
+
+  const count = input.filter(num => num > 0).length;
+  const sum = input.filter(num => num < 0).reduce((acc, curr) => acc + curr, 0);
+
+  return [count, sum];
+};
