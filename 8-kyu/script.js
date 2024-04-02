@@ -252,3 +252,8 @@ const countPositivesSumNegatives = function (input) {
 
   return [count, sum];
 };
+
+// Get the mean of an array
+const getAverage = function (marks) {
+  return Math.floor(marks.reduce((acc, el) => acc + el, 0) / marks.length);
+};
