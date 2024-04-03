@@ -257,3 +257,8 @@ const countPositivesSumNegatives = function (input) {
 const getAverage = function (marks) {
   return Math.floor(marks.reduce((acc, el) => acc + el, 0) / marks.length);
 };
+
+// Sum Mixed Array
+const sumMix = function (x) {
+  return x.map(el => +el).reduce((acc, el) => acc + el);
+};
