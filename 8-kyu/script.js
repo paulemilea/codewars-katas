@@ -262,3 +262,8 @@ const getAverage = function (marks) {
 const sumMix = function (x) {
   return x.map(el => +el).reduce((acc, el) => acc + el);
 };
+
+// Sentence Smash
+const smash = function (words) {
+  return words.join(' ');
+};
