@@ -267,3 +267,6 @@ const sumMix = function (x) {
 const smash = function (words) {
   return words.join(' ');
 };
+
+// Template Strings
+const templateStrings = (noun, adjective) => `${noun} are ${adjective}`;
