@@ -270,3 +270,6 @@ const smash = function (words) {
 
 // Template Strings
 const templateStrings = (noun, adjective) => `${noun} are ${adjective}`;
+
+// isReallyNaN
+const isReallyNaN = val => Number.isNaN(val);
