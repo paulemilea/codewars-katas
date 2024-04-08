@@ -273,3 +273,11 @@ const templateStrings = (noun, adjective) => `${noun} are ${adjective}`;
 
 // isReallyNaN
 const isReallyNaN = val => Number.isNaN(val);
+
+// Basic Mathematical Operations
+const basicOp = function (operation, value1, value2) {
+  if (operation === '+') return value1 + value2;
+  if (operation === '-') return value1 - value2;
+  if (operation === '*') return value1 * value2;
+  if (operation === '/') return value1 / value2;
+};
