@@ -281,3 +281,10 @@ const basicOp = function (operation, value1, value2) {
   if (operation === '*') return value1 * value2;
   if (operation === '/') return value1 / value2;
 };
+
+// Find the Remainder
+const remainder = function (n, m) {
+  const max = Math.max(n, m);
+  const min = Math.min(n, m);
+  return max % min;
+};
