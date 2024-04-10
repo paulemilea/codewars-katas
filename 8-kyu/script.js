@@ -299,3 +299,11 @@ const rps = (p1, p2) => {
   if (p1 === 'rock' && p2 === 'scissors') return 'Player 1 won!';
   if (p2 === 'rock' && p1 === 'scissors') return 'Player 2 won!';
 };
+
+// Exclamation marks series #11: Replace all vowel to exclamation mark in the sentence
+const replace = function (s) {
+  return s
+    .split('')
+    .map(el => el.replace(/[aeiouAEIOU]/, '!'))
+    .join('');
+};
