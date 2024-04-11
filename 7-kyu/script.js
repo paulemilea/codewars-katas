@@ -67,3 +67,9 @@ const isItLetter = function (character) {
   const chars = 'abcdefghijklmnopqrstuvwxyz';
   return chars.includes(character) || chars.toUpperCase().includes(character);
 };
+
+// Character Counter
+const validateWord = function (word) {
+  const uniqueCharactersCount = new Set(word.toLowerCase().split('')).size;
+  return word.length % uniqueCharactersCount === 0;
+};
