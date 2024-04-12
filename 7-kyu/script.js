@@ -73,3 +73,10 @@ const validateWord = function (word) {
   const uniqueCharactersCount = new Set(word.toLowerCase().split('')).size;
   return word.length % uniqueCharactersCount === 0;
 };
+
+// Consecutive items
+const consecutive = function (arr, a, b) {
+  const indexA = arr.indexOf(a);
+  const indexB = arr.indexOf(b);
+  return Math.abs(indexA - indexB) === 1;
+};
