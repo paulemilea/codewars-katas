@@ -18,3 +18,30 @@ const isPangram = function (string) {
 
 // Duplicate Arguments
 const solution = (...args) => args.length !== new Set(args).size;
+
+// Array Helpers
+Array.prototype.square = function () {
+  return this.map(value => value ** 2);
+};
+
+Array.prototype.cube = function () {
+  return this.map(value => value ** 3);
+};
+
+Array.prototype.average = function () {
+  return this.length
+    ? this.reduce((acc, value) => acc + value) / this.length
+    : NaN;
+};
+
+Array.prototype.sum = function () {
+  return this.length ? this.reduce((acc, value) => acc + value) : [];
+};
+
+Array.prototype.even = function () {
+  return this.filter(value => value % 2 === 0);
+};
+
+Array.prototype.odd = function () {
+  return this.filter(value => value % 2 !== 0);
+};
