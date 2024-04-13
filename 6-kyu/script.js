@@ -45,3 +45,16 @@ Array.prototype.even = function () {
 Array.prototype.odd = function () {
   return this.filter(value => value % 2 !== 0);
 };
+
+// Find the unique number
+const findUniq = function (arr) {
+  const count = {};
+
+  arr.forEach(item => {
+    count[item] = (count[item] || 0) + 1;
+  });
+
+  const [uniq] = arr.filter(item => count[item] === 1);
+
+  return uniq;
+};
