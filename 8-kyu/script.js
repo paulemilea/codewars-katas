@@ -312,3 +312,8 @@ const replace = function (s) {
 const greet = function (name) {
   return `Hello, ${name} how are you doing today?`;
 };
+
+// Merging sorted integer arrays (without duplicates)
+const mergeArrays = function (a, b) {
+  return Array.from(new Set([...a, ...b])).sort((a, b) => a - b);
+};
