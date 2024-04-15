@@ -80,3 +80,10 @@ const consecutive = function (arr, a, b) {
   const indexB = arr.indexOf(b);
   return Math.abs(indexA - indexB) === 1;
 };
+
+// Currying functions: multiply all elements in an array
+const multiplyAll = function (arr) {
+  return function multiplyBy(n) {
+    return arr.map(value => value * n);
+  };
+};
