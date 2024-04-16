@@ -317,3 +317,12 @@ const greet = function (name) {
 const mergeArrays = function (a, b) {
   return Array.from(new Set([...a, ...b])).sort((a, b) => a - b);
 };
+
+// Convert number to reversed array of digits
+const digitize = function (n) {
+  return n
+    .toString()
+    .split('')
+    .reverse()
+    .map(v => +v);
+};
