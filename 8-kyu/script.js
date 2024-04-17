@@ -328,4 +328,9 @@ const digitize = function (n) {
 };
 
 // Mr. Freeze
-Object.freeze(MrFreeze);
+// Object.freeze(MrFreeze);
+
+// Welcome to the City
+const sayHello = function (name, city, state) {
+  return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`;
+};
