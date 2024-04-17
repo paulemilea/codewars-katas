@@ -326,3 +326,6 @@ const digitize = function (n) {
     .reverse()
     .map(v => +v);
 };
+
+// Mr. Freeze
+Object.freeze(MrFreeze);
