@@ -334,3 +334,11 @@ const digitize = function (n) {
 const sayHello = function (name, city, state) {
   return `Hello, ${name.join(' ')}! Welcome to ${city}, ${state}!`;
 };
+
+// Double Char
+const doubleChar = function (str) {
+  return str
+    .split('')
+    .map(v => v.repeat(2))
+    .join('');
+};
