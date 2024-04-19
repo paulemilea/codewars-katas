@@ -87,3 +87,8 @@ const multiplyAll = function (arr) {
     return arr.map(value => value * n);
   };
 };
+
+// Working with arrays I (and why your code fails in some katas)
+const withoutLast = function (arr) {
+  return arr.slice(0, -1);
+};
