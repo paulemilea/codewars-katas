@@ -342,3 +342,8 @@ const doubleChar = function (str) {
     .map(v => v.repeat(2))
     .join('');
 };
+
+// Count Odd Numbers below n
+const oddCount = function (n) {
+  return Math.floor(n / 2);
+};
