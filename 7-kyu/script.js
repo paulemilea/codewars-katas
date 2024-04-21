@@ -94,6 +94,12 @@ const withoutLast = function (arr) {
 };
 
 // Make them bark!
-Dog.prototype.bark = function () {
-  return 'Woof!';
+// Dog.prototype.bark = function () {
+//   return 'Woof!';
+// };
+
+// Pull your words together, man!
+const sentencify = function (words) {
+  const sentence = words.join(' ');
+  return sentence[0].toUpperCase() + sentence.substring(1) + '.';
 };
