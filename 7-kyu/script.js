@@ -92,3 +92,8 @@ const multiplyAll = function (arr) {
 const withoutLast = function (arr) {
   return arr.slice(0, -1);
 };
+
+// Make them bark!
+Dog.prototype.bark = function () {
+  return 'Woof!';
+};
