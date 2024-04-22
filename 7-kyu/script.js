@@ -103,3 +103,19 @@ const sentencify = function (words) {
   const sentence = words.join(' ');
   return sentence[0].toUpperCase() + sentence.substring(1) + '.';
 };
+
+// Sort the Vowels!
+const sortVowels = function (s) {
+  if (typeof s !== 'string') return '';
+  const charset = 'aeiou';
+  return s
+    .split('')
+    .map(v => {
+      if (charset.includes(v) || charset.toUpperCase().includes(v)) {
+        return (v = '|' + v);
+      } else {
+        return (v = v + '|');
+      }
+    })
+    .join('\n');
+};
