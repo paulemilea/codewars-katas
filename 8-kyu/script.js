@@ -347,3 +347,8 @@ const doubleChar = function (str) {
 const oddCount = function (n) {
   return Math.floor(n / 2);
 };
+
+// Removing Elements
+const removeEveryOther = function (arr) {
+  return arr.filter((_v, i) => i % 2 === 0);
+};
