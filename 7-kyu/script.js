@@ -119,3 +119,13 @@ const sortVowels = function (s) {
     })
     .join('\n');
 };
+
+// Only One Gift Per Child
+const childrenWithAGift = [];
+const handOutGift = function (name) {
+  if (childrenWithAGift.includes(name)) {
+    throw new Error('This kid already received a gift... ⛔');
+  } else {
+    childrenWithAGift.push(name);
+  }
+};
