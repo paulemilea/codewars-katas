@@ -352,3 +352,10 @@ const oddCount = function (n) {
 const removeEveryOther = function (arr) {
   return arr.filter((_v, i) => i % 2 === 0);
 };
+
+// Hello, Name or World!
+const hello = function (name) {
+  if (name)
+    return `Hello, ${name[0].toUpperCase() + name.substring(1).toLowerCase()}!`;
+  return 'Hello, World!';
+};
