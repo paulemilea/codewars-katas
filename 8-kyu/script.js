@@ -359,3 +359,12 @@ const hello = function (name) {
     return `Hello, ${name[0].toUpperCase() + name.substring(1).toLowerCase()}!`;
   return 'Hello, World!';
 };
+
+// Leonardo Dicaprio and Oscars
+const leo = function (oscar) {
+  if (oscar === 88) return 'Leo finally won the oscar! Leo is happy';
+  if (oscar === 86) return 'Not even for Wolf of wallstreet?!';
+  if (oscar !== 88 && oscar !== 86 && oscar < 88)
+    return 'When will you give Leo an Oscar?';
+  if (oscar > 88) return 'Leo got one already!';
+};
