@@ -368,3 +368,14 @@ const leo = function (oscar) {
     return 'When will you give Leo an Oscar?';
   if (oscar > 88) return 'Leo got one already!';
 };
+
+// Generate range of integers
+const generateRange = function (min, max, step) {
+  if (min < max && step > 0) {
+    const result = [];
+    for (let i = min; i <= max; i += step) {
+      result.push(i);
+    }
+    return result;
+  }
+};
