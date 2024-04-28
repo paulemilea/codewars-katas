@@ -379,3 +379,8 @@ const generateRange = function (min, max, step) {
     return result;
   }
 };
+
+// Merge two sorted arrays into one
+const mergeArrays2 = function (arr1, arr2) {
+  return Array.from(new Set(arr1.concat(arr2))).sort((a, b) => a - b);
+};
