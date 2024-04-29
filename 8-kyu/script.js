@@ -384,3 +384,12 @@ const generateRange = function (min, max, step) {
 const mergeArrays2 = function (arr1, arr2) {
   return Array.from(new Set(arr1.concat(arr2))).sort((a, b) => a - b);
 };
+
+// What is between?
+const between = function (a, b) {
+  const result = [];
+  for (let i = a; i <= b; i++) {
+    result.push(i);
+  }
+  return result;
+};
