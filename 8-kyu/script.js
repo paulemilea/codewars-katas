@@ -393,3 +393,14 @@ const between = function (a, b) {
   }
   return result;
 };
+
+// How old will I be in 2099?
+const calculateAge = function (y1, y2) {
+  const age = Math.abs(y1 - y2);
+
+  if (age === 0) return 'You were born this very year!';
+
+  if (y1 < y2) return `You are ${age} ${age === 1 ? 'year' : 'years'} old.`;
+
+  return `You will be born in ${age} ${age === 1 ? 'year' : 'years'}.`;
+};
