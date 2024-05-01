@@ -404,3 +404,8 @@ const calculateAge = function (y1, y2) {
 
   return `You will be born in ${age} ${age === 1 ? 'year' : 'years'}.`;
 };
+
+// Formatting decimal places #0
+const twoDecimalPlaces = function (n) {
+  return Math.round(n * 100) / 100;
+};
