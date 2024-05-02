@@ -419,6 +419,13 @@ const shortenToDate = function (longDate) {
 const getNumberFromString = function (s) {
   return +s
     .split('')
-    .filter((v) => v.match(/[0-9]/g))
+    .filter(v => v.match(/[0-9]/g))
     .join('');
 };
+
+// Find the smallest integer in the array
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return args.sort((a, b) => a - b)[0];
+  }
+}
