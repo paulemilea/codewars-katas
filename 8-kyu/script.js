@@ -411,6 +411,14 @@ const twoDecimalPlaces = function (n) {
 };
 
 // Remove the time
-const shortenToDate = function(longDate) {
+const shortenToDate = function (longDate) {
   return longDate.split(',')[0];
-}
+};
+
+// Get number from string
+const getNumberFromString = function (s) {
+  return +s
+    .split('')
+    .filter((v) => v.match(/[0-9]/g))
+    .join('');
+};
