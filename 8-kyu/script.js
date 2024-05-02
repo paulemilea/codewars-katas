@@ -409,3 +409,8 @@ const calculateAge = function (y1, y2) {
 const twoDecimalPlaces = function (n) {
   return Math.round(n * 100) / 100;
 };
+
+// Remove the time
+const shortenToDate = function(longDate) {
+  return longDate.split(',')[0];
+}
