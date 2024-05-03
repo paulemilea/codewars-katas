@@ -429,3 +429,8 @@ class SmallestIntegerFinder {
     return args.sort((a, b) => a - b)[0];
   }
 }
+
+// My head is at the wrong end!
+const fixTheMeerkat = function (arr) {
+  return arr.reverse();
+};
