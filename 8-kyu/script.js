@@ -434,3 +434,8 @@ class SmallestIntegerFinder {
 const fixTheMeerkat = function (arr) {
   return arr.reverse();
 };
+
+// CSV representation of array
+const toCsvText = function (array) {
+  return array.map(innerArray => innerArray.join(',')).join('\n');
+};
