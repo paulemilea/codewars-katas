@@ -129,3 +129,15 @@ const handOutGift = function (name) {
     childrenWithAGift.push(name);
   }
 };
+
+// Deletion in an array
+const deleteValues = function (array, pred) {
+  let i = array.length;
+  while (i >= 0) {
+    i--;
+    if (pred(array[i])) {
+      array.splice(i, 1);
+    }
+  }
+  return array;
+};
