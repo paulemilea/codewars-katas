@@ -141,3 +141,10 @@ const deleteValues = function (array, pred) {
   }
   return array;
 };
+
+// Remove the minimum
+const removeSmallest = function (numbers) {
+  const smallestValue = Math.min(...numbers);
+  const indexOfSmallestValue = numbers.findIndex(v => v === smallestValue);
+  return numbers.filter((_v, i) => i !== indexOfSmallestValue);
+};
