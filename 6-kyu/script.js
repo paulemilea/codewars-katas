@@ -58,3 +58,12 @@ const findUniq = function (arr) {
 
   return uniq;
 };
+
+// Kebabize
+const kebabize = function(str) {
+  return str
+    .split(/(?=[A-Z])/)
+    .map((v) => v.replace(v.match(/[0-9]/g), ''))
+    .map((v) => v.toLowerCase())
+    .join('-');
+};
