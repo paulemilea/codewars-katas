@@ -439,3 +439,11 @@ const fixTheMeerkat = function (arr) {
 const toCsvText = function (array) {
   return array.map(innerArray => innerArray.join(',')).join('\n');
 };
+
+// Contamination #1 -String-
+const contamination = function(text, char) {
+  return text
+    .split('')
+    .map((v) => v.replace(v, char))
+    .join('');
+};
