@@ -148,3 +148,11 @@ const removeSmallest = function (numbers) {
   const indexOfSmallestValue = numbers.findIndex(v => v === smallestValue);
   return numbers.filter((_v, i) => i !== indexOfSmallestValue);
 };
+
+// Failed Filter - Bug Fixing #3
+const FilterNumbers = function (str) {
+  return str
+    .split('')
+    .filter(v => !v.match(/[0-9]/g))
+    .join('');
+};
