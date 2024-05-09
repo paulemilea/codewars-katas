@@ -478,3 +478,8 @@ const getPlanetName = function (id) {
   }
   return name;
 };
+
+// Enumerable Magic #1 - True for All?
+const all = function (arr, fn) {
+  return arr.every(v => fn(v));
+};
