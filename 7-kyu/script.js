@@ -156,3 +156,15 @@ const FilterNumbers = function (str) {
     .filter(v => !v.match(/[0-9]/g))
     .join('');
 };
+
+// Sum of array singles
+const repeats = function (arr) {
+  const occurences = arr.reduce((acc, v) => {
+    acc[v] = (acc[v] || 0) + 1;
+    return acc;
+  }, {});
+  return Object.entries(occurences)
+    .filter(([_i, v]) => v === 1)
+    .map(([i, _v]) => Number(i))
+    .reduce((acc, v) => acc + v);
+};
