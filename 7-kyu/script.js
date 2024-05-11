@@ -168,3 +168,8 @@ const repeats = function (arr) {
     .map(([i, _v]) => Number(i))
     .reduce((acc, v) => acc + v);
 };
+
+// Thinkful - String Drills: Quotable
+const quotable = function (name, quote) {
+  return `${name} said: "${quote}"`;
+};
