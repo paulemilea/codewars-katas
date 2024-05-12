@@ -483,3 +483,11 @@ const getPlanetName = function (id) {
 const all = function (arr, fn) {
   return arr.every(v => fn(v));
 };
+
+// Find the Difference in Age between Oldest and Youngest Family Members
+const differenceInAges = function (ages) {
+  const youngest = Math.min(...ages);
+  const oldest = Math.max(...ages);
+  const ageDifference = Math.abs(oldest - youngest);
+  return [youngest, oldest, ageDifference];
+};
