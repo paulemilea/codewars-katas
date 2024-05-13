@@ -173,3 +173,8 @@ const repeats = function (arr) {
 const quotable = function (name, quote) {
   return `${name} said: "${quote}"`;
 };
+
+// Sum of Minimums!
+const sumOfMinimums = function (arr) {
+  return arr.map(innerArr => Math.min(...innerArr)).reduce((acc, v) => acc + v);
+};
