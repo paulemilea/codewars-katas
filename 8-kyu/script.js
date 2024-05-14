@@ -491,3 +491,16 @@ const differenceInAges = function (ages) {
   const ageDifference = Math.abs(oldest - youngest);
   return [youngest, oldest, ageDifference];
 };
+
+// Draw stairs
+const drawStairs = function (n) {
+  let str = '';
+  for (let i = 1; i <= n; i++) {
+    if (i === n) {
+      str += `${' '.repeat(i - 1)}I`;
+    } else {
+      str += `${' '.repeat(i - 1)}I\n`;
+    }
+  }
+  return str;
+};
