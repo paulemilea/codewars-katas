@@ -504,3 +504,9 @@ const drawStairs = function (n) {
   }
   return str;
 };
+
+// Square(n) Sum
+const squareSum = function (numbers) {
+  if (!numbers.length) return 0;
+  return numbers.map(v => v * v).reduce((acc, v) => acc + v);
+};
