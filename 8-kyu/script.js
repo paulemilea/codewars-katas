@@ -510,3 +510,8 @@ const squareSum = function (numbers) {
   if (!numbers.length) return 0;
   return numbers.map(v => v * v).reduce((acc, v) => acc + v);
 };
+
+// Sum The Strings
+const sumStr = function (a, b) {
+  return String(Number(a) + Number(b));
+};
