@@ -515,3 +515,11 @@ const squareSum = function (numbers) {
 const sumStr = function (a, b) {
   return String(Number(a) + Number(b));
 };
+
+// String cleaning
+const stringClean = function (s) {
+  return s
+    .split('')
+    .filter(letter => !letter.match(/[0-9]/))
+    .join('');
+};
