@@ -523,3 +523,8 @@ const stringClean = function (s) {
     .filter(letter => !letter.match(/[0-9]/))
     .join('');
 };
+
+// Add Length
+const addLength = function (str) {
+  return str.split(' ').map(word => `${word} ${word.length}`);
+};
