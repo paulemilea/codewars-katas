@@ -528,3 +528,15 @@ const stringClean = function (s) {
 const addLength = function (str) {
   return str.split(' ').map(word => `${word} ${word.length}`);
 };
+
+// Check same case
+const sameCase = function (a, b) {
+  const charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  if (!charset.includes(a) || !charset.includes(b)) return -1;
+  if (
+    (a === a.toUpperCase() && b === b.toUpperCase()) ||
+    (a === a.toLowerCase() && b === b.toLowerCase())
+  )
+    return 1;
+  return 0;
+};
