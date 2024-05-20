@@ -178,3 +178,11 @@ const quotable = function (name, quote) {
 const sumOfMinimums = function (arr) {
   return arr.map(innerArr => Math.min(...innerArr)).reduce((acc, v) => acc + v);
 };
+
+// String reverse slicing 101
+const reverseSlice = function (str) {
+  return str
+    .split('')
+    .reverse()
+    .map((_, i, arr) => arr.slice(i).join(''));
+};
