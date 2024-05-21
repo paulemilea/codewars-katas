@@ -540,3 +540,14 @@ const sameCase = function (a, b) {
     return 1;
   return 0;
 };
+
+// altERnaTIng cAsE <=> ALTerNAtiNG CaSe
+String.prototype.toAlternatingCase = function () {
+  return this.split('')
+    .map(letter =>
+      letter === letter.toUpperCase()
+        ? letter.toLowerCase()
+        : letter.toUpperCase()
+    )
+    .join('');
+};
