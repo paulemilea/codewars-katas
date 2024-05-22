@@ -60,10 +60,27 @@ const findUniq = function (arr) {
 };
 
 // Kebabize
-const kebabize = function(str) {
+const kebabize = function (str) {
   return str
     .split(/(?=[A-Z])/)
-    .map((v) => v.replace(v.match(/[0-9]/g), ''))
-    .map((v) => v.toLowerCase())
+    .map(v => v.replace(v.match(/[0-9]/g), ''))
+    .map(v => v.toLowerCase())
     .join('-');
+};
+
+// Only Duplicates
+const onlyDuplicates = function (str) {
+  const occurences = str.split('').reduce((acc, value) => {
+    acc[value] = (acc[value] || 0) + 1;
+    return acc;
+  }, {});
+
+  let result = '';
+  for (const letter of str) {
+    if (occurences[letter] > 1) {
+      result += letter;
+    }
+  }
+
+  return result;
 };
