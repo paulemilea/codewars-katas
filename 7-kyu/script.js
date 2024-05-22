@@ -186,3 +186,13 @@ const reverseSlice = function (str) {
     .reverse()
     .map((_, i, arr) => arr.slice(i).join(''));
 };
+
+// Find the missing element between two arrays
+const findMissing = function (arr1, arr2) {
+  const arr1Sorted = arr1.sort((a, b) => a - b);
+  const arr2Sorted = arr2.sort((a, b) => a - b);
+
+  for (let i = 0; i < arr1Sorted.length; i++) {
+    if (arr1Sorted[i] !== arr2Sorted[i]) return arr1Sorted[i];
+  }
+};
