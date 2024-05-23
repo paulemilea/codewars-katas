@@ -551,3 +551,10 @@ String.prototype.toAlternatingCase = function () {
     )
     .join('');
 };
+
+// Return Two Highest Values in List
+const twoHighest = function (arr) {
+  return Array.from(new Set(arr))
+    .sort((a, b) => b - a)
+    .slice(0, 2);
+};
