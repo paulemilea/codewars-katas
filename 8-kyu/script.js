@@ -558,3 +558,8 @@ const twoHighest = function (arr) {
     .sort((a, b) => b - a)
     .slice(0, 2);
 };
+
+// Dollars and Cents
+const formatMoney = function (amount) {
+  return `$${amount.toFixed(2)}`;
+};
