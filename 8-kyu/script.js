@@ -563,3 +563,12 @@ const twoHighest = function (arr) {
 const formatMoney = function (amount) {
   return `$${amount.toFixed(2)}`;
 };
+
+// Stringy Strings
+const stringy = function (size) {
+  let str = '';
+  for (let i = 1; i <= size; i++) {
+    str += i % 2;
+  }
+  return str;
+};
