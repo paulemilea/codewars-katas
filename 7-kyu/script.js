@@ -196,3 +196,13 @@ const findMissing = function (arr1, arr2) {
     if (arr1Sorted[i] !== arr2Sorted[i]) return arr1Sorted[i];
   }
 };
+
+// Odd Ones Out!
+const oddOnesOut = function (nums) {
+  const occurences = nums.reduce((acc, value) => {
+    acc[value] = (acc[value] || 0) + 1;
+    return acc;
+  }, {});
+
+  return nums.filter(value => occurences[value] % 2 === 0);
+};
