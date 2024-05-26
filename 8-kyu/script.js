@@ -572,3 +572,11 @@ const stringy = function (size) {
   }
   return str;
 };
+
+// Abbreviate a Two Word Name
+const abbrevName = function (name) {
+  return name
+    .split(' ')
+    .map(name => name.at(0).toUpperCase())
+    .join('.');
+};
