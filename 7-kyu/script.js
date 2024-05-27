@@ -206,3 +206,26 @@ const oddOnesOut = function (nums) {
 
   return nums.filter(value => occurences[value] % 2 === 0);
 };
+
+// String Reversing, Changing case, etc.
+const reverseAndMirror = function (s1, s2) {
+  const invertCaseAndReverse = function (str, reverse = false) {
+    const caseInvertedChars = str
+      .split('')
+      .map(letter =>
+        letter === letter.toUpperCase()
+          ? letter.toLowerCase()
+          : letter.toUpperCase()
+      );
+
+    return reverse
+      ? caseInvertedChars.reverse().join('')
+      : caseInvertedChars.join('');
+  };
+
+  const formattedS1 =
+    invertCaseAndReverse(s1, true) + invertCaseAndReverse(s1, false);
+  const formattedS2 = invertCaseAndReverse(s2, true);
+
+  return [formattedS2, formattedS1].join('@@@');
+};
