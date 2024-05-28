@@ -580,3 +580,8 @@ const abbrevName = function (name) {
     .map(name => name.at(0).toUpperCase())
     .join('.');
 };
+
+// Calculate average
+const findAverage = function (array) {
+  return array.length ? array.reduce((acc, el) => acc + el) / array.length : 0;
+};
