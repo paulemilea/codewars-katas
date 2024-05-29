@@ -585,3 +585,8 @@ const abbrevName = function (name) {
 const findAverage = function (array) {
   return array.length ? array.reduce((acc, el) => acc + el) / array.length : 0;
 };
+
+// If you can't sleep, just count sheep!!
+const countSheep = function (num) {
+  return Array.from({ length: num }, (_v, i) => `${i + 1} sheep...`).join('');
+};
