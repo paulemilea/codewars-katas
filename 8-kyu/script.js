@@ -590,3 +590,12 @@ const findAverage = function (array) {
 const countSheep = function (num) {
   return Array.from({ length: num }, (_v, i) => `${i + 1} sheep...`).join('');
 };
+
+// How good are you really?
+const betterThanAverage = function (classPoints, yourPoints) {
+  const totalClassPoints = [...classPoints, yourPoints];
+  const avgScore =
+    totalClassPoints.reduce((acc, classPoint) => acc + classPoint) /
+    totalClassPoints.length;
+  return yourPoints > avgScore;
+};
