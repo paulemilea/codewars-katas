@@ -229,3 +229,8 @@ const reverseAndMirror = function (s1, s2) {
 
   return [formattedS2, formattedS1].join('@@@');
 };
+
+// Convert an array of strings to array of numbers
+const toNumberArray = function (stringarray) {
+  return stringarray.map(str => +str);
+};
