@@ -84,3 +84,19 @@ const onlyDuplicates = function (str) {
 
   return result;
 };
+
+// Sort the odd
+const sortArray = function (arr) {
+  const odds = arr.filter(v => v % 2 !== 0);
+  odds.sort((a, b) => a - b);
+
+  let oddsIndex = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 !== 0) {
+      arr[i] = odds[oddsIndex];
+      oddsIndex++;
+    }
+  }
+
+  return arr;
+};
