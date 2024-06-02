@@ -599,3 +599,9 @@ const betterThanAverage = function (classPoints, yourPoints) {
     totalClassPoints.length;
   return yourPoints > avgScore;
 };
+
+// Simple validation of a username with regex
+const validateUsr = function (username) {
+  const regex = new RegExp(/^[a-z0-9_]+$/);
+  return regex.test(username) && username.length >= 4 && username.length <= 16;
+};
