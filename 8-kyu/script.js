@@ -605,3 +605,13 @@ const validateUsr = function (username) {
   const regex = new RegExp(/^[a-z0-9_]+$/);
   return regex.test(username) && username.length >= 4 && username.length <= 16;
 };
+
+// Sum of Multiples
+const sumMul = function (n, m) {
+  if (n <= 0 || m <= 0) return 'INVALID';
+  let result = 0;
+  for (let i = n; i < m; i += n) {
+    result += i;
+  }
+  return result;
+};
