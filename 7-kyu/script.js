@@ -234,3 +234,14 @@ const reverseAndMirror = function (s1, s2) {
 const toNumberArray = function (stringarray) {
   return stringarray.map(str => +str);
 };
+
+// Divide and Conquer
+const divCon = function (x) {
+  let sumNums = 0;
+  let sumStrs = 0;
+  for (const el of x) {
+    if (typeof el === 'number') sumNums += el;
+    if (typeof el === 'string') sumStrs += Number(el);
+  }
+  return sumNums - sumStrs;
+};
