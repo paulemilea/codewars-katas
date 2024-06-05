@@ -615,3 +615,8 @@ const sumMul = function (n, m) {
   }
   return result;
 };
+
+// String Templates - Bug Fixing #5
+const buildString = function (...template) {
+  return `I like ${template.join(', ')}!`;
+};
