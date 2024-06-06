@@ -620,3 +620,8 @@ const sumMul = function (n, m) {
 const buildString = function (...template) {
   return `I like ${template.join(', ')}!`;
 };
+
+// Enumerable Magic - Does My List Include This?
+const include = function (arr, item) {
+  return arr.includes(item);
+};
