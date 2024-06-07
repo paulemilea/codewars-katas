@@ -245,3 +245,18 @@ const divCon = function (x) {
   }
   return sumNums - sumStrs;
 };
+
+// From A to Z
+const gimmeTheLetters = function (sp) {
+  const charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  const start = charset.indexOf(sp[0]);
+  const finish = charset.indexOf(sp[2]);
+
+  let result = '';
+
+  for (let i = start; i <= finish; i++) {
+    result += charset[i];
+  }
+
+  return result;
+};
