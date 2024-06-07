@@ -625,3 +625,12 @@ const buildString = function (...template) {
 const include = function (arr, item) {
   return arr.includes(item);
 };
+
+// Transportation on vacation
+const rentalCarCost = function (d) {
+  const totalPriceWithoutDiscount = d * 40;
+
+  if (d >= 7) return totalPriceWithoutDiscount - 50;
+  if (d >= 3) return totalPriceWithoutDiscount - 20;
+  return totalPriceWithoutDiscount;
+};
