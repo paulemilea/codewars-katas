@@ -100,3 +100,14 @@ const sortArray = function (arr) {
 
   return arr;
 };
+
+// Replace With Alphabet Position
+const alphabetPosition = function (text) {
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+  const lettersOnly = text
+    .split('')
+    .filter(letter => alphabet.includes(letter.toLowerCase()));
+  return lettersOnly
+    .map(letter => alphabet.indexOf(letter.toLowerCase()) + 1)
+    .join(' ');
+};
