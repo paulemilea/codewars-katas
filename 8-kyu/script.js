@@ -634,3 +634,10 @@ const rentalCarCost = function (d) {
   if (d >= 3) return totalPriceWithoutDiscount - 20;
   return totalPriceWithoutDiscount;
 };
+
+// Exclamation marks series #1: Remove an exclamation mark from the end of string
+const remove = function (string) {
+  if (string[string.length - 1] === '!')
+    return string.substring(0, string.length - 1);
+  return string;
+};
