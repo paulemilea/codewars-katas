@@ -646,3 +646,12 @@ const remove = function (string) {
 const isDivisible = function (n, x, y) {
   return n % x === 0 && n % y === 0;
 };
+
+// Sort and Star
+const twoSort = function (s) {
+  return s
+    .sort()
+    .find((_, i) => i === 0)
+    .split('')
+    .join('***');
+};
