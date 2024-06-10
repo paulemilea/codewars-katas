@@ -641,3 +641,8 @@ const remove = function (string) {
     return string.substring(0, string.length - 1);
   return string;
 };
+
+// Is n divisible by x and y?
+const isDivisible = function (n, x, y) {
+  return n % x === 0 && n % y === 0;
+};
