@@ -655,3 +655,8 @@ const twoSort = function (s) {
     .split('')
     .join('***');
 };
+
+// Remove First and Last Character
+const removeChar = function (str) {
+  return str.substring(1, str.length - 1);
+};
