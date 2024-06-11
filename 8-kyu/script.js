@@ -660,3 +660,8 @@ const twoSort = function (s) {
 const removeChar = function (str) {
   return str.substring(1, str.length - 1);
 };
+
+// Ensure question
+const ensureQuestion = function (s) {
+  return s[s.length - 1] === '?' ? s : s + '?';
+};
