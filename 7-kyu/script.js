@@ -260,3 +260,12 @@ const gimmeTheLetters = function (sp) {
 
   return result;
 };
+
+// Sum of integers in string
+const sumOfIntegersInString = function (s) {
+  const intsArr = s.match(/[0-9]+/g);
+
+  return intsArr === null
+    ? 0
+    : intsArr.reduce((acc, value) => acc + Number(value), 0);
+};
