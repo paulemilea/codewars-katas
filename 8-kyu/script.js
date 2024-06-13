@@ -665,3 +665,7 @@ const removeChar = function (str) {
 const ensureQuestion = function (s) {
   return s[s.length - 1] === '?' ? s : s + '?';
 };
+
+// Will you make it?
+const zeroFuel = (distanceToPump, mpg, fuelLeft) =>
+  fuelLeft * mpg >= distanceToPump;
