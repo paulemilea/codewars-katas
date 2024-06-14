@@ -669,3 +669,8 @@ const ensureQuestion = function (s) {
 // Will you make it?
 const zeroFuel = (distanceToPump, mpg, fuelLeft) =>
   fuelLeft * mpg >= distanceToPump;
+
+// Is it even?
+const testEven = function (n) {
+  return n % 2 === 0;
+};
