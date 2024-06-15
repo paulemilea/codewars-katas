@@ -674,3 +674,7 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) =>
 const testEven = function (n) {
   return n % 2 === 0;
 };
+
+// Twice as old
+const twiceAsOld = (dadYearsOld, sonYearsOld) =>
+  Math.abs(dadYearsOld - 2 * sonYearsOld);
