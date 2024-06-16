@@ -269,3 +269,18 @@ const sumOfIntegersInString = function (s) {
     ? 0
     : intsArr.reduce((acc, value) => acc + Number(value), 0);
 };
+
+// Spot the Differences
+const spot = function (s1, s2) {
+  if (s1 === s2) return [];
+
+  const result = [];
+
+  for (let i = 0; i < s1.length; i++) {
+    if (s1[i] !== s2[i]) {
+      result.push(i);
+    }
+  }
+
+  return result;
+};
