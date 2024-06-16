@@ -678,3 +678,8 @@ const testEven = function (n) {
 // Twice as old
 const twiceAsOld = (dadYearsOld, sonYearsOld) =>
   Math.abs(dadYearsOld - 2 * sonYearsOld);
+
+// Is he gonna survive?
+const hero = function (bullets, dragons) {
+  return bullets >= dragons * 2;
+};
