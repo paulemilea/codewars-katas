@@ -28,3 +28,6 @@ const generateHashtag = function (str) {
   }
   return hashtag.length > 140 ? false : hashtag;
 };
+
+// Regex Password Validation
+const REGEXP = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{6,}$/;
