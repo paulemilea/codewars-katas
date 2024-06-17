@@ -683,3 +683,8 @@ const twiceAsOld = (dadYearsOld, sonYearsOld) =>
 const hero = function (bullets, dragons) {
   return bullets >= dragons * 2;
 };
+
+// Opposite number
+const opposite = function (number) {
+  return number > 0 ? -Math.abs(number) : Math.abs(number);
+};
