@@ -688,3 +688,10 @@ const hero = function (bullets, dragons) {
 const opposite = function (number) {
   return number > 0 ? -Math.abs(number) : Math.abs(number);
 };
+
+// Keep up the hoop
+const hoopCount = function (n) {
+  return n >= 10
+    ? 'Great, now move on to tricks'
+    : 'Keep at it until you get it';
+};
