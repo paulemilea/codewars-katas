@@ -129,3 +129,16 @@ const likes = function (names) {
       } others like this`;
   }
 };
+
+// Multiples of 3 or 5
+const solution = function (number) {
+  if (number <= 0) return 0;
+  const result = [];
+
+  for (let i = 1; i < number; i++) {
+    if (i % 3 === 0 || i % 5 === 0) result.push(i);
+    if (i % 3 === 0 && i % 5 === 0 && !result.includes(i)) result.push(i);
+  }
+
+  return result.reduce((acc, el) => acc + el, 0);
+};
