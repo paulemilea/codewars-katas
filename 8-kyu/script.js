@@ -695,3 +695,9 @@ const hoopCount = function (n) {
     ? 'Great, now move on to tricks'
     : 'Keep at it until you get it';
 };
+
+// Short Long Short
+const solution = function (a, b) {
+  const sorted = [a, b].sort((a, b) => a.length - b.length);
+  return `${sorted.at(0)}${sorted.at(1)}${sorted.at(0)}`;
+};
