@@ -9,7 +9,7 @@ const evenOrOdd = function (number) {
 // };
 
 // Reversed Strings
-const solution = function (str) {
+const reverseString = function (str) {
   return str.split('').reverse().join('');
 };
 
@@ -697,7 +697,10 @@ const hoopCount = function (n) {
 };
 
 // Short Long Short
-const solution = function (a, b) {
+const shortLongShort = function (a, b) {
   const sorted = [a, b].sort((a, b) => a.length - b.length);
   return `${sorted.at(0)}${sorted.at(1)}${sorted.at(0)}`;
 };
+
+// MakeUpperCase
+const makeUpperCase = str => str.toUpperCase();
