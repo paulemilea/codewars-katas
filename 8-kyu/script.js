@@ -704,3 +704,6 @@ const shortLongShort = function (a, b) {
 
 // MakeUpperCase
 const makeUpperCase = str => str.toUpperCase();
+
+// Remove String Spaces
+const noSpace = x => x.split(' ').join('');
