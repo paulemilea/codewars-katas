@@ -284,3 +284,10 @@ const spot = function (s1, s2) {
 
   return result;
 };
+
+// Highest and Lowest
+const highAndLow = numbers =>
+  [
+    String(Math.max(...numbers.split(' ').map(v => +v))),
+    String(Math.min(...numbers.split(' ').map(v => +v))),
+  ].join(' ');
