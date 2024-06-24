@@ -291,3 +291,14 @@ const highAndLow = numbers =>
     String(Math.max(...numbers.split(' ').map(v => +v))),
     String(Math.min(...numbers.split(' ').map(v => +v))),
   ].join(' ');
+
+// Beginner Series #3 Sum of Numbers
+const getSum = function (a, b) {
+  const result = [];
+
+  for (let i = Math.min(a, b); i <= Math.max(a, b); i++) {
+    result.push(i);
+  }
+
+  return result.reduce((acc, v) => acc + v);
+};
