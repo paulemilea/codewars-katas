@@ -707,3 +707,6 @@ const makeUpperCase = str => str.toUpperCase();
 
 // Remove String Spaces
 const noSpace = x => x.split(' ').join('');
+
+// Parse nice int from char problem
+const getAge = inputString => parseInt(inputString);
