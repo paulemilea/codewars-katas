@@ -17,7 +17,7 @@ const isPangram = function (string) {
 };
 
 // Duplicate Arguments
-const solution = (...args) => args.length !== new Set(args).size;
+const duplicateArgs = (...args) => args.length !== new Set(args).size;
 
 // Array Helpers
 Array.prototype.square = function () {
@@ -131,7 +131,7 @@ const likes = function (names) {
 };
 
 // Multiples of 3 or 5
-const solution = function (number) {
+const multiplesOf3or5 = function (number) {
   if (number <= 0) return 0;
   const result = [];
 
@@ -141,4 +141,21 @@ const solution = function (number) {
   }
 
   return result.reduce((acc, el) => acc + el, 0);
+};
+
+// Create Phone Number
+const createPhoneNumber = function (numbers) {
+  let phoneNumber = '(';
+
+  for (let i = 0; i < numbers.length; i++) {
+    if (i === 2) {
+      phoneNumber += numbers[i] + ') ';
+    } else if (i === 5) {
+      phoneNumber += numbers[i] + '-';
+    } else {
+      phoneNumber += numbers[i];
+    }
+  }
+
+  return phoneNumber;
 };
