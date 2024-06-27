@@ -710,3 +710,9 @@ const noSpace = x => x.split(' ').join('');
 
 // Parse nice int from char problem
 const getAge = inputString => parseInt(inputString);
+
+// Regex count lowercase letters
+const lowercaseCount = function (str) {
+  const count = str.match(/[a-z]/g);
+  return count !== null ? count.length : 0;
+};
