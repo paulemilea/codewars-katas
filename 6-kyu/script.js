@@ -159,3 +159,15 @@ const createPhoneNumber = function (numbers) {
 
   return phoneNumber;
 };
+
+// Find the odd int
+const findOdd = function (arr) {
+  const occurences = arr.reduce((acc, value) => {
+    acc[value] = (acc[value] || 0) + 1;
+    return acc;
+  }, {});
+
+  return +Object.entries(occurences).find(
+    ([_key, value]) => value % 2 !== 0
+  )[0];
+};
