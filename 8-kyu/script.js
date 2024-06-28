@@ -716,3 +716,8 @@ const lowercaseCount = function (str) {
   const count = str.match(/[a-z]/g);
   return count !== null ? count.length : 0;
 };
+
+// Grasshopper - Array Mean
+const findMean = function (nums) {
+  return nums.reduce((acc, v) => acc + v) / nums.length;
+};
