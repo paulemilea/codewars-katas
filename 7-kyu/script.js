@@ -302,3 +302,11 @@ const getSum = function (a, b) {
 
   return result.reduce((acc, v) => acc + v);
 };
+
+// esreveR gnirtS
+String.prototype.reverse = function () {
+  return this.split(' ')
+    .map(word => word.split('').reverse().join(''))
+    .reverse()
+    .join(' ');
+};
