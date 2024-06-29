@@ -721,3 +721,8 @@ const lowercaseCount = function (str) {
 const findMean = function (nums) {
   return nums.reduce((acc, v) => acc + v) / nums.length;
 };
+
+// Remove duplicates from list
+const distinct = function (a) {
+  return Array.from(new Set(a));
+};
