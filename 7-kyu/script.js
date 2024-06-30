@@ -310,3 +310,12 @@ String.prototype.reverse = function () {
     .reverse()
     .join(' ');
 };
+
+// Divisible by previous digit?
+const divisibleByLast = function (n) {
+  const numToArray = String(n)
+    .split('')
+    .map(v => Number(v));
+
+  return numToArray.map((v, i, arr) => v % arr[i - 1] === 0);
+};
