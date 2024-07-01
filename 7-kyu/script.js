@@ -319,3 +319,9 @@ const divisibleByLast = function (n) {
 
   return numToArray.map((v, i, arr) => v % arr[i - 1] === 0);
 };
+
+// Email Address Obfuscator
+const obfuscate = function (email) {
+  const emailWithoutDots = email.replaceAll('.', ' [dot] ');
+  return emailWithoutDots.replace('@', ' [at] ');
+};
