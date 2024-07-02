@@ -726,3 +726,12 @@ const findMean = function (nums) {
 const distinct = function (a) {
   return Array.from(new Set(a));
 };
+
+// Remove First and Last Character Part Two
+const array = function (string) {
+  const strToArr = string.split(',');
+  if (strToArr.length <= 2) return null;
+  return strToArr
+    .filter((_, i, arr) => i !== 0 && i !== arr.length - 1)
+    .join(' ');
+};
