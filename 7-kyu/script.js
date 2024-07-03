@@ -325,3 +325,18 @@ const obfuscate = function (email) {
   const emailWithoutDots = email.replaceAll('.', ' [dot] ');
   return emailWithoutDots.replace('@', ' [at] ');
 };
+
+// Sum a list but ignore any duplicates
+const sumNoDuplicates = function (numList) {
+  const occurences = numList.reduce((acc, v) => {
+    acc[v] = (acc[v] || 0) + 1;
+    return acc;
+  }, {});
+
+  let sum = 0;
+
+  for (const [key, value] of Object.entries(occurences))
+    if (value === 1) sum += Number(key);
+
+  return sum;
+};
