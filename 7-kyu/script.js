@@ -340,3 +340,13 @@ const sumNoDuplicates = function (numList) {
 
   return sum;
 };
+
+// Summing a number's digits
+const sumDigits = function (number) {
+  const absNumber = Math.abs(number);
+
+  return absNumber
+    .toString()
+    .split('')
+    .reduce((acc, v) => acc + Number(v), 0);
+};
