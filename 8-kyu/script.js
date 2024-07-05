@@ -735,3 +735,8 @@ const array = function (string) {
     .filter((_, i, arr) => i !== 0 && i !== arr.length - 1)
     .join(' ');
 };
+
+// FIXME: Replace all dots
+const replaceDots = function (str) {
+  return str.replaceAll('.', '-');
+};
