@@ -740,3 +740,8 @@ const array = function (string) {
 const replaceDots = function (str) {
   return str.replaceAll('.', '-');
 };
+
+// Exclusive "or" (xor) Logical Operator
+const xor = function (a, b) {
+  return (a === true && b === false) || (a === false && b === true);
+};
