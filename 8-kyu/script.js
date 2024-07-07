@@ -745,3 +745,6 @@ const replaceDots = function (str) {
 const xor = function (a, b) {
   return (a === true && b === false) || (a === false && b === true);
 };
+
+// Chuck Norris VII - True or False? (Beginner)
+const ifChuckSaysSo = () => !true;
