@@ -748,3 +748,8 @@ const xor = function (a, b) {
 
 // Chuck Norris VII - True or False? (Beginner)
 const ifChuckSaysSo = () => !true;
+
+// Grasshopper - Terminal game combat function
+const combat = function (health, damage) {
+  return health < damage ? 0 : health - damage;
+};
