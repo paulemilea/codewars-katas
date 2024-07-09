@@ -753,3 +753,8 @@ const ifChuckSaysSo = () => !true;
 const combat = function (health, damage) {
   return health < damage ? 0 : health - damage;
 };
+
+// Simple Comparison?
+const compare = function (a, b) {
+  return String(a) === String(b);
+};
