@@ -758,3 +758,8 @@ const combat = function (health, damage) {
 const compare = function (a, b) {
   return String(a) === String(b);
 };
+
+// Reverse List Order
+const reverseList = function (list) {
+  return list.reverse();
+};
