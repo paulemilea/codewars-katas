@@ -763,3 +763,11 @@ const compare = function (a, b) {
 const reverseList = function (list) {
   return list.reverse();
 };
+
+// Opposites Attract
+const lovefunc = function (flower1, flower2) {
+  return (
+    (flower1 % 2 === 0 && flower2 % 2 !== 0) ||
+    (flower1 % 2 !== 0 && flower2 % 2 === 0)
+  );
+};
