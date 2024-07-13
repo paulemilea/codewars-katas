@@ -171,3 +171,14 @@ const findOdd = function (arr) {
     ([_key, value]) => value % 2 !== 0
   )[0];
 };
+
+// Find the missing letter
+const findMissingLetter = function (array) {
+  const charset = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  const start = charset.indexOf(array[0]);
+  const end = charset.indexOf(array[array.length - 1]);
+
+  for (let i = start; i <= end; i++) {
+    if (!array.includes(charset[i])) return charset[i];
+  }
+};
