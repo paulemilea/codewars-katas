@@ -31,3 +31,9 @@ const generateHashtag = function (str) {
 
 // Regex Password Validation
 const REGEXP = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{6,}$/;
+
+// Not very secure
+const alphanumeric = function (string) {
+  const regex = new RegExp(/^(?!.*[ _])[A-Za-z0-9]+$/);
+  return regex.test(string);
+};
