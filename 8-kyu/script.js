@@ -771,3 +771,10 @@ const lovefunc = function (flower1, flower2) {
     (flower1 % 2 !== 0 && flower2 % 2 === 0)
   );
 };
+
+// Thinkful - Logic Drills: Traffic light
+const updateLight = function (current) {
+  if (current === 'green') return 'yellow';
+  if (current === 'yellow') return 'red';
+  if (current === 'red') return 'green';
+};
