@@ -778,3 +778,10 @@ const updateLight = function (current) {
   if (current === 'yellow') return 'red';
   if (current === 'red') return 'green';
 };
+
+// A Needle in the Haystack
+const findNeedle = function (haystack) {
+  return `found the needle at position ${haystack.findIndex(
+    v => v === 'needle'
+  )}`;
+};
