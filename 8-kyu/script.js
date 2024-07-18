@@ -785,3 +785,13 @@ const findNeedle = function (haystack) {
     v => v === 'needle'
   )}`;
 };
+
+// Is the date today
+const isToday = function (date) {
+  const today = new Date();
+  return (
+    date.getDate() === today.getDate() &&
+    date.getMonth() === today.getMonth() &&
+    date.getFullYear() === today.getFullYear()
+  );
+};
