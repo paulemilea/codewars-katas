@@ -355,3 +355,14 @@ const sumDigits = function (number) {
 const convertHashToArray = function (hash) {
   return Object.entries(hash);
 };
+
+// Number Pairs
+const getLargerNumbers = function (a, b) {
+  const result = [];
+
+  for (let i = 0; i < a.length; i++) {
+    a[i] > b[i] || a[i] === b[i] ? result.push(a[i]) : result.push(b[i]);
+  }
+
+  return result;
+};
