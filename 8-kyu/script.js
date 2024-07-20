@@ -800,3 +800,8 @@ const isToday = function (date) {
 const whoIsPaying = function (name) {
   return name.length > 2 ? [name, name.slice(0, 2)] : [name];
 };
+
+// Reversing Words in a String
+const reverse = function (string) {
+  return string.split(' ').reverse().join(' ');
+};
