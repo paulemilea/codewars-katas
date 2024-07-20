@@ -366,3 +366,12 @@ const getLargerNumbers = function (a, b) {
 
   return result;
 };
+
+// Simple Fun #176: Reverse Letter
+const reverseLetter = function (str) {
+  return str
+    .split('')
+    .filter(letter => letter.match(/[a-z]/))
+    .reverse()
+    .join('');
+};
