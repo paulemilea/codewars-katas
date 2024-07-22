@@ -805,3 +805,6 @@ const whoIsPaying = function (name) {
 const reverse = function (string) {
   return string.split(' ').reverse().join(' ');
 };
+
+// Super Duper Easy
+const problem = x => (typeof x !== 'number' ? 'Error' : x * 50 + 6);
