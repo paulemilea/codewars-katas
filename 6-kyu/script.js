@@ -182,3 +182,21 @@ const findMissingLetter = function (array) {
     if (!array.includes(charset[i])) return charset[i];
   }
 };
+
+// Sum of Digits / Digital Root
+const digitalRoot = function (n) {
+  const sumOfDigits = function (n) {
+    return String(n)
+      .split('')
+      .map(Number)
+      .reduce((acc, v) => acc + v);
+  };
+
+  let result = n;
+
+  while (result >= 10) {
+    result = sumOfDigits(result);
+  }
+
+  return result;
+};
