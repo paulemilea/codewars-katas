@@ -808,3 +808,11 @@ const reverse = function (string) {
 
 // Super Duper Easy
 const problem = x => (typeof x !== 'number' ? 'Error' : x * 50 + 6);
+
+// Fake Binary
+const fakeBin = function (x) {
+  return x
+    .split('')
+    .map(v => (v < 5 ? 0 : 1))
+    .join('');
+};
