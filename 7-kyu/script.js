@@ -375,3 +375,15 @@ const reverseLetter = function (str) {
     .reverse()
     .join('');
 };
+
+// Check three and two
+const checkThreeAndTwo = function (array) {
+  const occurences = array.reduce((acc, v) => {
+    acc[v] = (acc[v] || 0) + 1;
+    return acc;
+  }, {});
+
+  const occurrenceCounts = Object.values(occurences);
+
+  return occurrenceCounts.includes(3) && occurrenceCounts.includes(2);
+};
