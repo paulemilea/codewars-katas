@@ -37,3 +37,15 @@ const alphanumeric = function (string) {
   const regex = new RegExp(/^(?!.*[ _])[A-Za-z0-9]+$/);
   return regex.test(string);
 };
+
+// Simple Pig Latin
+const pigIt = function (str) {
+  return str
+    .split(' ')
+    .map(word =>
+      !word.match(/[.,!?;:'"(){}\[\]<>\-]/g)
+        ? `${word.slice(1)}${word[0]}${'ay'}`
+        : word
+    )
+    .join(' ');
+};
