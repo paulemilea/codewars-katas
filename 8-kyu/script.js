@@ -816,3 +816,6 @@ const fakeBin = function (x) {
     .map(v => (v < 5 ? 0 : 1))
     .join('');
 };
+
+// You Can't Code Under Pressure #1
+const doubleInteger = i => i * 2;
