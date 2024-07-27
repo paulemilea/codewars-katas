@@ -819,3 +819,8 @@ const fakeBin = function (x) {
 
 // You Can't Code Under Pressure #1
 const doubleInteger = i => i * 2;
+
+// Capitalization and Mutability
+const capitalizeWord = function (word) {
+  return word[0].toUpperCase() + word.slice(1);
+};
