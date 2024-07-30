@@ -200,3 +200,11 @@ const digitalRoot = function (n) {
 
   return result;
 };
+
+// Convert string to camel case
+const toCamelCase = function (str) {
+  return str
+    .split(/[-_]/)
+    .map((word, i) => (i !== 0 ? word[0].toUpperCase() + word.slice(1) : word))
+    .join('');
+};
