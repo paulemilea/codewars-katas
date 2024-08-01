@@ -387,3 +387,8 @@ const checkThreeAndTwo = function (array) {
 
   return occurrenceCounts.includes(3) && occurrenceCounts.includes(2);
 };
+
+// Between Extremes
+const betweenExtremes = function (numbers) {
+  return Math.max(...numbers) - Math.min(...numbers);
+};
