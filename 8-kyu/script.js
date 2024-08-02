@@ -865,3 +865,8 @@ const cookie = function (x) {
     ? 'Who ate the last cookie? It was Monica!'
     : 'Who ate the last cookie? It was the dog!';
 };
+
+// Printing Array elements with Comma delimiters
+const printArray = function (array) {
+  return array.join(',');
+};
