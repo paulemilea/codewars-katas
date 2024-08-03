@@ -392,3 +392,12 @@ const checkThreeAndTwo = function (array) {
 const betweenExtremes = function (numbers) {
   return Math.max(...numbers) - Math.min(...numbers);
 };
+
+// Return the Missing Element
+const getMissingElement = function (arr) {
+  for (let i = 0; i < 10; i++) {
+    if (!arr.includes(i)) {
+      return i;
+    }
+  }
+};
