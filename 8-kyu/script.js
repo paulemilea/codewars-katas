@@ -874,3 +874,8 @@ const printArray = function (array) {
 // Be Concise IV - Index of an element in an array
 const find = (array, element) =>
   array.includes(element) ? array.indexOf(element) : 'Not found';
+
+// Reversed sequence
+const reverseSeq = n => {
+  return Array.from({ length: n }, (_v, i) => i + 1).sort((a, b) => b - a);
+};
