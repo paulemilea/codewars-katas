@@ -879,3 +879,8 @@ const find = (array, element) =>
 const reverseSeq = n => {
   return Array.from({ length: n }, (_v, i) => i + 1).sort((a, b) => b - a);
 };
+
+// Type of sum
+const typeOfSum = function (a, b) {
+  return typeof (a + b);
+};
