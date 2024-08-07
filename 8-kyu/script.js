@@ -884,3 +884,6 @@ const reverseSeq = n => {
 const typeOfSum = function (a, b) {
   return typeof (a + b);
 };
+
+// Beginner Series #1 School Paperwork
+const paperwork = (n, m) => (n > 0 && m > 0 ? n * m : 0);
