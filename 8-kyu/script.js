@@ -890,3 +890,9 @@ const paperwork = (n, m) => (n > 0 && m > 0 ? n * m : 0);
 
 // Is it a number?
 const isDigit = s => /^[-+]?(\d+(\.\d*)?|\.\d+)([eE][-+]?\d+)?$/.test(s);
+
+// Find the position!
+const position = function (letter) {
+  const charset = 'abcdefghijklmnopqrstuvwxyz';
+  return `Position of alphabet: ${charset.indexOf(letter) + 1}`;
+};
