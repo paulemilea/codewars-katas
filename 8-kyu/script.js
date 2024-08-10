@@ -896,3 +896,8 @@ const position = function (letter) {
   const charset = 'abcdefghijklmnopqrstuvwxyz';
   return `Position of alphabet: ${charset.indexOf(letter) + 1}`;
 };
+
+// 5 without numbers !!
+const unusualFive = function () {
+  return 'apple'.length;
+};
