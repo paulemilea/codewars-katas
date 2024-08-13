@@ -408,3 +408,8 @@ const missingNo = function (nums) {
     if (!nums.includes(i)) return i;
   }
 };
+
+// Friend or Foe?
+const friend = function (friends) {
+  return friends.filter(friend => friend.length === 4);
+};
