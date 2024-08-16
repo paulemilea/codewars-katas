@@ -911,22 +911,20 @@ const humanYearsCatYearsDogYears = function (humanYears) {
   for (let i = 0; i < humanYears; i++) {
     if (i > 1) {
       catAge += 4;
-    } else if (i === 1) {
-      catAge += 9;
-    } else {
-      catAge += 15;
-    }
-  }
-
-  for (let i = 0; i < humanYears; i++) {
-    if (i > 1) {
       dogAge += 5;
     } else if (i === 1) {
+      catAge += 9;
       dogAge += 9;
     } else {
+      catAge += 15;
       dogAge += 15;
     }
   }
 
   return [humanAge, catAge, dogAge];
+};
+
+// Convert a Boolean to a String
+const booleanToString = function (b) {
+  return b ? 'true' : 'false';
 };
