@@ -901,3 +901,32 @@ const position = function (letter) {
 const unusualFive = function () {
   return 'apple'.length;
 };
+
+// Cat years, Dog years
+const humanYearsCatYearsDogYears = function (humanYears) {
+  const humanAge = humanYears * 1;
+  let catAge = 0;
+  let dogAge = 0;
+
+  for (let i = 0; i < humanYears; i++) {
+    if (i > 1) {
+      catAge += 4;
+    } else if (i === 1) {
+      catAge += 9;
+    } else {
+      catAge += 15;
+    }
+  }
+
+  for (let i = 0; i < humanYears; i++) {
+    if (i > 1) {
+      dogAge += 5;
+    } else if (i === 1) {
+      dogAge += 9;
+    } else {
+      dogAge += 15;
+    }
+  }
+
+  return [humanAge, catAge, dogAge];
+};
