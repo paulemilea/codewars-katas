@@ -413,3 +413,11 @@ const missingNo = function (nums) {
 const friend = function (friends) {
   return friends.filter(friend => friend.length === 4);
 };
+
+// Disemvowel Trolls
+const disemvowel = function (str) {
+  return str
+    .split('')
+    .filter(letter => !letter.match(/[aeiouAEIOU]/))
+    .join('');
+};
