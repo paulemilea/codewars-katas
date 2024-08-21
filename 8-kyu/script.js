@@ -948,3 +948,31 @@ const grader = function (score) {
   if (score >= 0.7) return 'C';
   if (score >= 0.6) return 'D';
 };
+
+// Tip Calculator
+const calculateTip = function (amount, rating) {
+  const lowercaseRating = rating.toLowerCase();
+
+  let tip;
+  switch (lowercaseRating) {
+    case 'excellent':
+      tip = amount * 0.2;
+      break;
+    case 'great':
+      tip = amount * 0.15;
+      break;
+    case 'good':
+      tip = amount * 0.1;
+      break;
+    case 'poor':
+      tip = amount * 0.05;
+      break;
+    case 'terrible':
+      tip = amount * 0;
+      break;
+    default:
+      return 'Rating not recognised';
+  }
+
+  return Math.ceil(tip);
+};
