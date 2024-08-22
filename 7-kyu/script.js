@@ -428,3 +428,8 @@ String.prototype.toJadenCase = function () {
     .map(word => word[0].toUpperCase() + word.slice(1))
     .join(' ');
 };
+
+// Find min and max
+const getMinMax = function (arr) {
+  return [Math.min(...arr), Math.max(...arr)];
+};
