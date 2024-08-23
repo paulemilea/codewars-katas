@@ -208,3 +208,18 @@ const toCamelCase = function (str) {
     .map((word, i) => (i !== 0 ? word[0].toUpperCase() + word.slice(1) : word))
     .join('');
 };
+
+// WeIrD StRiNg CaSe
+const toWeirdCase = function (string) {
+  return string
+    .split(' ')
+    .map(word =>
+      word
+        .split('')
+        .map((letter, index) => {
+          return index % 2 !== 0 ? letter.toLowerCase() : letter.toUpperCase();
+        })
+        .join('')
+    )
+    .join(' ');
+};
