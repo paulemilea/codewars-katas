@@ -433,3 +433,18 @@ String.prototype.toJadenCase = function () {
 const getMinMax = function (arr) {
   return [Math.min(...arr), Math.max(...arr)];
 };
+
+// Number to digit tiers
+const createArrayOfTiers = function (num) {
+  const digits = num.toString().split('');
+
+  let str = digits[0];
+  const result = [];
+
+  for (let i = 0; i < digits.length; i++) {
+    i !== 0 ? (str += digits[i]) : str;
+    result.push(str);
+  }
+
+  return result;
+};
