@@ -976,3 +976,28 @@ const calculateTip = function (amount, rating) {
 
   return Math.ceil(tip);
 };
+
+// Grasshopper - Grade book
+const getGrade = function (s1, s2, s3) {
+  const avgScore = (s1 + s2 + s3) / 3;
+
+  if (avgScore <= 100 && avgScore >= 90) {
+    return 'A';
+  }
+
+  if (avgScore <= 90 && avgScore >= 80) {
+    return 'B';
+  }
+
+  if (avgScore <= 80 && avgScore >= 70) {
+    return 'C';
+  }
+
+  if (avgScore <= 70 && avgScore >= 60) {
+    return 'D';
+  }
+
+  if (avgScore <= 60 && avgScore >= 0) {
+    return 'F';
+  }
+};
