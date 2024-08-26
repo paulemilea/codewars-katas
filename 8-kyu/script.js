@@ -1001,3 +1001,10 @@ const getGrade = function (s1, s2, s3) {
     return 'F';
   }
 };
+
+// Are You Playing Banjo?
+const areYouPlayingBanjo = function (name) {
+  return name[0] === 'R' || name[0] === 'r'
+    ? `${name} plays banjo`
+    : `${name} does not play banjo`;
+};
