@@ -448,3 +448,17 @@ const createArrayOfTiers = function (num) {
 
   return result;
 };
+
+// Last
+const last = function (...args) {
+  if (args.length === 1) {
+    const arg = args[0];
+    if (Array.isArray(arg) || typeof arg === 'string') {
+      return arg[arg.length - 1];
+    } else {
+      return arg;
+    }
+  } else {
+    return args[args.length - 1];
+  }
+};
