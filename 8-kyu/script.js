@@ -1021,3 +1021,8 @@ const peopleWithAgeDrink = function (old) {
     return 'drink whisky';
   }
 };
+
+// Convert a string to an array
+const stringToArray = function (string) {
+  return string.split(' ');
+};
