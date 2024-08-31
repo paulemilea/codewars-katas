@@ -8,3 +8,9 @@ function reverse($str)
   $reversedStr = implode(' ', $reversedArr);
   return $reversedStr;
 }
+
+// Convert a string to an array
+function string_to_array($s)
+{
+  return explode(' ', $s);
+}
