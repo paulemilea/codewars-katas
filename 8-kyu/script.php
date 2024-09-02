@@ -28,3 +28,9 @@ function people_with_age_drink(int $old): string
     return 'drink whisky';
   }
 };
+
+// You Can't Code Under Pressure #1
+function doubleInteger($i)
+{
+  return $i * 2;
+}
