@@ -462,3 +462,8 @@ const last = function (...args) {
     return args[args.length - 1];
   }
 };
+
+// Double Every Other
+const doubleEveryOther = function (a) {
+  return a.map((v, i) => (i % 2 !== 0 ? v * 2 : v));
+};
