@@ -1026,3 +1026,8 @@ const peopleWithAgeDrink = function (old) {
 const stringToArray = function (string) {
   return string.split(' ');
 };
+
+// Name Shuffler
+const nameShuffler = function (str) {
+  return str.split(' ').reverse().join(' ');
+};
