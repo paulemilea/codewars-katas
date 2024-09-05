@@ -1031,3 +1031,6 @@ const stringToArray = function (string) {
 const nameShuffler = function (str) {
   return str.split(' ').reverse().join(' ');
 };
+
+// validate code with simple regex
+const validateCode = code => /^[123]/.test(code);
