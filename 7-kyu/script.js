@@ -467,3 +467,17 @@ const last = function (...args) {
 const doubleEveryOther = function (a) {
   return a.map((v, i) => (i % 2 !== 0 ? v * 2 : v));
 };
+
+// Length and two values.
+const alternate = function (n, firstValue, secondValue) {
+  const result = [];
+
+  if (n > 0) {
+    for (let i = 0; i < n; i++) {
+      i % 2 === 0 ? result.push(firstValue) : result.push(secondValue);
+    }
+    return result;
+  } else {
+    return result;
+  }
+};
