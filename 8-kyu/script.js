@@ -1034,3 +1034,6 @@ const nameShuffler = function (str) {
 
 // validate code with simple regex
 const validateCode = code => /^[123]/.test(code);
+
+// You only need one - Beginner
+const check = (a, x) => a.includes(x);
