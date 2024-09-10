@@ -40,3 +40,9 @@ function even_or_odd(int $n): string
 {
   return ($n % 2 === 0) ? 'Even' : 'Odd';
 }
+
+// You only need one - Beginner
+function solution($a, $x)
+{
+  return in_array($x, $a);
+}
