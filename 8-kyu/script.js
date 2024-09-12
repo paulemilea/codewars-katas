@@ -1064,3 +1064,8 @@ const greet2 = function (language) {
     ? 'Welcome'
     : greetings_db[language];
 };
+
+// The 'if' function
+const _if = function (bool, func1, func2) {
+  return bool ? func1() : func2();
+};
