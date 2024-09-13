@@ -223,3 +223,13 @@ const toWeirdCase = function (string) {
     )
     .join(' ');
 };
+
+// Your order, please
+const order = function (words) {
+  return words
+    .split(' ')
+    .sort((a, b) => {
+      return a.match(/[0-9]/) - b.match(/[0-9]/);
+    })
+    .join(' ');
+};
