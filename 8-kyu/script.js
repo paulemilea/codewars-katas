@@ -1069,3 +1069,9 @@ const greet2 = function (language) {
 const _if = function (bool, func1, func2) {
   return bool ? func1() : func2();
 };
+
+// Jenny's secret message
+const greet3 = function (name) {
+  if (name === 'Johnny') return 'Hello, my love!';
+  return 'Hello, ' + name + '!';
+};
