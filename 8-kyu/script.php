@@ -46,3 +46,13 @@ function solution($a, $x)
 {
   return in_array($x, $a);
 }
+
+// Jenny's secret message
+function greet($name)
+{
+  if ($name === 'Johnny') {
+    return 'Hello, my love!';
+  }
+
+  return "Hello, $name!";
+}
