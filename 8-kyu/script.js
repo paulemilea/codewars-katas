@@ -1075,3 +1075,6 @@ const greet3 = function (name) {
   if (name === 'Johnny') return 'Hello, my love!';
   return 'Hello, ' + name + '!';
 };
+
+// Reversed Words
+const reverseWords = str => str.split(' ').reverse().join(' ');
