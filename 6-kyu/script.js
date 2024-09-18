@@ -233,3 +233,23 @@ const order = function (words) {
     })
     .join(' ');
 };
+
+// Highest Scoring Word
+const high = function (x) {
+  const alphabet = 'abcdefghijklmnopqrstuvwxyz';
+
+  const words = x.split(' ');
+
+  const wordsScore = words.map(word =>
+    word
+      .split('')
+      .map(letter => +alphabet.indexOf(letter) + 1)
+      .reduce((totalScore, letterScore) => totalScore + letterScore)
+  );
+
+  const highestScore = Math.max(...wordsScore);
+
+  const indexOfhighestScore = wordsScore.indexOf(highestScore);
+
+  return words[indexOfhighestScore];
+};
