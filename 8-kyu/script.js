@@ -1078,3 +1078,6 @@ const greet3 = function (name) {
 
 // Reversed Words
 const reverseWords = str => str.split(' ').reverse().join(' ');
+
+// Grasshopper - Debug sayHello
+const sayHello2 = name => `Hello, ${name}`;
