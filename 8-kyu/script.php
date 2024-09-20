@@ -56,3 +56,9 @@ function greet($name)
 
   return "Hello, $name!";
 }
+
+// Grasshopper - Debug sayHello
+function sayHello(string $name): string
+{
+  return "Hello, " . $name;
+}
