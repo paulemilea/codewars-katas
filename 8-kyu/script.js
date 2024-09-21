@@ -1081,3 +1081,8 @@ const reverseWords = str => str.split(' ').reverse().join(' ');
 
 // Grasshopper - Debug sayHello
 const sayHello2 = name => `Hello, ${name}`;
+
+// Will there be enough space?
+const enough = function (cap, on, wait) {
+  return on + wait < cap ? 0 : on + wait - cap;
+};

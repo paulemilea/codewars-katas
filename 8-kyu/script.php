@@ -65,7 +65,6 @@ function sayHello(string $name): string
 
 // Will there be enough space?
 function enough($cap, $on, $wait)
-
 {
   return ($on + $wait < $cap) ? 0 : (($on + $wait) - $cap);
 }
