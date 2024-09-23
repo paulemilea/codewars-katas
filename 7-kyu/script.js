@@ -481,3 +481,11 @@ const alternate = function (n, firstValue, secondValue) {
     return result;
   }
 };
+
+// Sum of two lowest positive integers
+const sumTwoSmallestNumbers = function (numbers) {
+  return numbers
+    .sort((a, b) => a - b)
+    .slice(0, 2)
+    .reduce((acc, v) => acc + v);
+};
