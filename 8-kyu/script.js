@@ -1086,3 +1086,6 @@ const sayHello2 = name => `Hello, ${name}`;
 const enough = function (cap, on, wait) {
   return on + wait < cap ? 0 : on + wait - cap;
 };
+
+// ES6 string addition
+const joinStrings = (string1, string2) => `${string1} ${string2}`;
