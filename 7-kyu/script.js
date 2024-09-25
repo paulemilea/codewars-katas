@@ -489,3 +489,7 @@ const sumTwoSmallestNumbers = function (numbers) {
     .slice(0, 2)
     .reduce((acc, v) => acc + v);
 };
+
+// Lowercase strings in array
+const arrayLowerCase = arr =>
+  arr.map(v => (typeof v !== 'string' ? v : v.toLowerCase()));
