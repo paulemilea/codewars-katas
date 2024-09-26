@@ -253,3 +253,13 @@ const high = function (x) {
 
   return words[indexOfhighestScore];
 };
+
+// Count characters in your string
+const count = function (string) {
+  const occurences = string.split('').reduce((acc, value) => {
+    acc[value] = (acc[value] || 0) + 1;
+    return acc;
+  }, {});
+
+  return occurences;
+};
