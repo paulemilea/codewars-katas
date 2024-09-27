@@ -493,3 +493,11 @@ const sumTwoSmallestNumbers = function (numbers) {
 // Lowercase strings in array
 const arrayLowerCase = arr =>
   arr.map(v => (typeof v !== 'string' ? v : v.toLowerCase()));
+
+// Indexed capitalization
+const capitalize = function (s, arr) {
+  return s
+    .split('')
+    .map((v, i) => (arr.includes(i) ? v.toUpperCase() : v))
+    .join('');
+};
