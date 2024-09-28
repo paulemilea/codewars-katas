@@ -1089,3 +1089,6 @@ const enough = function (cap, on, wait) {
 
 // ES6 string addition
 const joinStrings = (string1, string2) => `${string1} ${string2}`;
+
+// Do I get a bonus?
+const bonusTime = (salary, bonus) => (bonus ? `£${salary * 10}` : `£${salary}`);
