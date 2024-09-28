@@ -501,3 +501,12 @@ const capitalize = function (s, arr) {
     .map((v, i) => (arr.includes(i) ? v.toUpperCase() : v))
     .join('');
 };
+
+// V A P O R C O D E
+const vaporcode = function (string) {
+  return string
+    .toUpperCase()
+    .split('')
+    .filter(char => char !== ' ')
+    .join('  ');
+};
