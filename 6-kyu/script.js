@@ -263,3 +263,6 @@ const count = function (string) {
 
   return occurences;
 };
+
+// Break camelCase
+const solution = string => string.split(/(?=[A-Z])/).join(' ');
