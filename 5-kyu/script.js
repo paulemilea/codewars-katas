@@ -49,3 +49,21 @@ const pigIt = function (str) {
     )
     .join(' ');
 };
+
+// First non-repeating character
+const firstNonRepeatingLetter = function (s) {
+  const lowerCaseString = s.toLowerCase();
+
+  const occurences = lowerCaseString.split('').reduce((acc, value) => {
+    acc[value] = (acc[value] || 0) + 1;
+    return acc;
+  }, {});
+
+  for (let i = 0; i < s.length; i++) {
+    if (occurences[lowerCaseString[i]] === 1) {
+      return s[i];
+    }
+  }
+
+  return '';
+};
