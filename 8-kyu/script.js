@@ -1092,3 +1092,6 @@ const joinStrings = (string1, string2) => `${string1} ${string2}`;
 
 // Do I get a bonus?
 const bonusTime = (salary, bonus) => (bonus ? `£${salary * 10}` : `£${salary}`);
+
+// Grasshopper - Personalized Message
+const greet4 = (name, owner) => (name === owner ? 'Hello boss' : 'Hello guest');
