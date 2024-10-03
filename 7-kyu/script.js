@@ -510,3 +510,8 @@ const vaporcode = function (string) {
     .filter(char => char !== ' ')
     .join('  ');
 };
+
+// No oddities here
+const noOdds = function (values) {
+  return values.filter(value => value % 2 === 0);
+};
