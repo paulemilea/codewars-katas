@@ -1095,3 +1095,12 @@ const bonusTime = (salary, bonus) => (bonus ? `£${salary * 10}` : `£${salary}`
 
 // Grasshopper - Personalized Message
 const greet4 = (name, owner) => (name === owner ? 'Hello boss' : 'Hello guest');
+
+// Find Maximum and Minimum Values of a List
+const min = function (list) {
+  return Math.min(...list);
+};
+
+const max = function (list) {
+  return Math.max(...list);
+};
