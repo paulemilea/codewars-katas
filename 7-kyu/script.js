@@ -515,3 +515,10 @@ const vaporcode = function (string) {
 const noOdds = function (values) {
   return values.filter(value => value % 2 === 0);
 };
+
+// Descending Order
+const descendingOrder = n =>
+  +String(n)
+    .split('')
+    .sort((a, b) => b - a)
+    .join('');
