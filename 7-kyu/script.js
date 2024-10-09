@@ -522,3 +522,6 @@ const descendingOrder = n =>
     .split('')
     .sort((a, b) => b - a)
     .join('');
+
+// Is every value in the array an array?
+const arrCheck = value => value.every(v => Array.isArray(v));
