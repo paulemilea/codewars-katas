@@ -266,3 +266,23 @@ const count = function (string) {
 
 // Break camelCase
 const solution = string => string.split(/(?=[A-Z])/).join(' ');
+
+// Mexican Wave
+const wave = function (str) {
+  let result = [];
+
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === ' ') continue;
+
+    result.push(
+      str
+        .split('')
+        .map((letter, index) =>
+          index === i ? letter.toUpperCase() : letter.toLowerCase()
+        )
+        .join('')
+    );
+  }
+
+  return result;
+};
