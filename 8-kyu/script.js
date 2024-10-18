@@ -1104,3 +1104,8 @@ const min = function (list) {
 const max = function (list) {
   return Math.max(...list);
 };
+
+// Correct the mistakes of the character recognition software
+const correct = function (string) {
+  return string.replaceAll('5', 'S').replaceAll('0', 'O').replaceAll('1', 'I');
+};
