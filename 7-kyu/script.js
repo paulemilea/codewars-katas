@@ -525,3 +525,8 @@ const descendingOrder = n =>
 
 // Is every value in the array an array?
 const arrCheck = value => value.every(v => Array.isArray(v));
+
+// Odder Than the Rest
+const oddOne = function (arr) {
+  return arr.findIndex(v => v % 2 !== 0);
+};
