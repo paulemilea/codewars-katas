@@ -530,3 +530,12 @@ const arrCheck = value => value.every(v => Array.isArray(v));
 const oddOne = function (arr) {
   return arr.findIndex(v => v % 2 !== 0);
 };
+
+// Anagram Detection
+const isAnagram = function (test, original) {
+  if (test.length !== original.length) return false;
+
+  const sortWord = word => word.toLowerCase().split('').sort().join('');
+
+  return sortWord(test) === sortWord(original);
+};
