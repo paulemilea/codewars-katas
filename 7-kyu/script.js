@@ -539,3 +539,17 @@ const isAnagram = function (test, original) {
 
   return sortWord(test) === sortWord(original);
 };
+
+// Alternate capitalization
+const capitalize2 = function (s) {
+  const splitChars = s.split('');
+
+  const capitalizeEven = splitChars
+    .map((v, i) => (i % 2 === 0 ? v.toUpperCase() : v.toLowerCase()))
+    .join('');
+  const capitalizeOdd = splitChars
+    .map((v, i) => (i % 2 !== 0 ? v.toUpperCase() : v.toLowerCase()))
+    .join('');
+
+  return [capitalizeEven, capitalizeOdd];
+};
