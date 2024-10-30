@@ -1127,3 +1127,8 @@ const switchItUp = function (number) {
 
   return numberWords[number];
 };
+
+// Grasshopper - Function syntax debugging
+const main = function (verb, noun) {
+  return verb + noun;
+};
