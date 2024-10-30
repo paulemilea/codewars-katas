@@ -553,3 +553,12 @@ const capitalize2 = function (s) {
 
   return [capitalizeEven, capitalizeOdd];
 };
+
+// Filter the number
+const filterString = function (value) {
+  return +value
+    .split('')
+    .map(v => Number(v))
+    .filter(v => !isNaN(v))
+    .join('');
+};
