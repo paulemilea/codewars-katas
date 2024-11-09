@@ -562,3 +562,8 @@ const filterString = function (value) {
     .filter(v => !isNaN(v))
     .join('');
 };
+
+// String ends with?
+const solution = function (str, ending) {
+  return ending === '' ? true : str.slice(-ending.length) === ending;
+};
