@@ -1132,3 +1132,8 @@ const switchItUp = function (number) {
 const main = function (verb, noun) {
   return verb + noun;
 };
+
+// Grasshopper - Messi goals function
+const goals = function (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+  return laLigaGoals + copaDelReyGoals + championsLeagueGoals;
+};
