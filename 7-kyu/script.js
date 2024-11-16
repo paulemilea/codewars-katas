@@ -567,3 +567,19 @@ const filterString = function (value) {
 const solution = function (str, ending) {
   return ending === '' ? true : str.slice(-ending.length) === ending;
 };
+
+// Changing letters
+const swap = function (string) {
+  const charset = 'aeiou';
+
+  return string
+    .split('')
+    .map(letter => {
+      if (charset.includes(letter)) {
+        return letter.toUpperCase();
+      } else {
+        return letter;
+      }
+    })
+    .join('');
+};
