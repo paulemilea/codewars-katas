@@ -594,3 +594,8 @@ const capitals = function (word) {
 
   return result;
 };
+
+// Even numbers in an array
+const evenNumbers = function (array, number) {
+  return array.filter(v => v % 2 === 0).slice(-number);
+};
