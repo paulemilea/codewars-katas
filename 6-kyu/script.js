@@ -286,3 +286,8 @@ const wave = function (str) {
 
   return result;
 };
+
+// Array.diff
+const arrayDiff = function (a, b) {
+  return a.filter(v => !b.includes(v));
+};
