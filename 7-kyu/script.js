@@ -599,3 +599,10 @@ const capitals = function (word) {
 const evenNumbers = function (array, number) {
   return array.filter(v => v % 2 === 0).slice(-number);
 };
+
+// Regex validate PIN code
+const validatePIN = function (pin) {
+  const regex = /^\d{4}(\d{2})?$/;
+
+  return regex.test(pin);
+};
