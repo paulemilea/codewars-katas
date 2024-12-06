@@ -1147,3 +1147,8 @@ const firstNonConsecutive = function (arr) {
   }
   return null;
 };
+
+// L1: Set Alarm
+const setAlarm = function (employed, vacation) {
+  return employed === true && vacation === false ? true : false;
+};
