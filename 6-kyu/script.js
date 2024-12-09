@@ -291,3 +291,14 @@ const wave = function (str) {
 const arrayDiff = function (a, b) {
   return a.filter(v => !b.includes(v));
 };
+
+// Backspaces in string
+function cleanString(s) {
+  const stack = [];
+
+  for (const char of s) {
+    char === '#' ? stack.pop() : stack.push(char);
+  }
+
+  return stack.join('');
+}
