@@ -1152,3 +1152,6 @@ const firstNonConsecutive = function (arr) {
 const setAlarm = function (employed, vacation) {
   return employed === true && vacation === false ? true : false;
 };
+
+// Function 2 - squaring an argument
+const square = n => n * n;
