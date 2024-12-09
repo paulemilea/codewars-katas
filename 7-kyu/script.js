@@ -606,3 +606,8 @@ const validatePIN = function (pin) {
 
   return regex.test(pin);
 };
+
+// Largest Elements
+const largest = function (n, array) {
+  return n > 0 ? array.sort((a, b) => a - b).slice(-n) : [];
+};
